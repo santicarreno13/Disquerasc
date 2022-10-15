@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="https://wwww.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disquera</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background"> 
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" th:href="@{index}">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" th:href="@{/genero}">Gnerós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/disquera}">Disquera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/artista}">Artista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/cancion}">Cancion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/album}">Album</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="title">
+        <h1>Discoteca</h1>
+      </div>
+    </div>
+</body>
+</html>
